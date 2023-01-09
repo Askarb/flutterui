@@ -10,7 +10,7 @@ class HwJan6 extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.green,
         appBar: AppBar(
-          title: const Text("Sample ap2p"),
+          title: const Text("Sample app"),
         ),
         body: const Center(
           child: Text("image"),
