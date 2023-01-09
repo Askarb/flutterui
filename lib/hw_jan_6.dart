@@ -10,36 +10,13 @@ class HwJan6 extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.green,
         appBar: AppBar(
+          centerTitle: false,
           title: const Text("Sample app"),
         ),
         body: const Center(
           child: Text("image"),
         ),
         bottomNavigationBar: MyRow(),
-
-        // body: Row(
-        //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        //   children: [
-        //     const Expanded(
-        //       child: MyRow(
-        //         color: Colors.grey,
-        //         mainAxisAlignment: MainAxisAlignment.start,
-        //       ),
-        //     ),
-        //     Expanded(
-        //       child: MyRow(
-        //         color: Colors.black12,
-        //         mainAxisAlignment: MainAxisAlignment.center,
-        //       ),
-        //     ),
-        //     Expanded(
-        //       child: MyRow(
-        //         color: Colors.blue,
-        //         mainAxisAlignment: MainAxisAlignment.end,
-        //       ),
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }
@@ -52,13 +29,42 @@ class MyRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Column(
-        children: [
-          const Text("+"),
-        ],
+    return Container(
+      color: Colors.yellow,
+      height: 80,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Button(),
+            SizedBox(
+              width: 20,
+            ),
+            Button(),
+            SizedBox(
+              width: 20,
+            ),
+            Button(),
+          ],
+        ),
       ),
+    );
+  }
+}
+
+class Button extends StatelessWidget {
+  const Button({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 80,
+      height: 60,
+      color: Colors.cyan,
+      child: const Center(child: Text("  +\nAdd")),
     );
   }
 }
