@@ -37,7 +37,6 @@ class HWJan10 extends StatelessWidget {
               alignment: Alignment.topRight,
               child: TextButton(
                 onPressed: () {
-                  print("asdasd");
                   Navigator.pushNamed(context, "/second");
                 },
                 child: const Text(
