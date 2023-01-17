@@ -25,14 +25,14 @@ class _ClJan16State extends State<ClJan16> {
                 icon: const Icon(Icons.door_back_door),
                 str: 'kgs',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               MyRow(
                 icon: const Icon(Icons.door_back_door),
                 str: 'kgs',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               MyRow(
